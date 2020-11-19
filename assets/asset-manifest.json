@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8b707407.chunk.css",
+    "main.js": "/static/js/main.3856faf2.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.32931517.js",
+    "static/css/2.06efa7ae.chunk.css": "/static/css/2.06efa7ae.chunk.css",
+    "static/js/2.eac1c8c5.chunk.js": "/static/js/2.eac1c8c5.chunk.js",
+    "static/js/3.5a35a76f.chunk.js": "/static/js/3.5a35a76f.chunk.js",
+    "static/js/4.28dc0ba5.chunk.js": "/static/js/4.28dc0ba5.chunk.js",
+    "static/js/5.dda7aea6.chunk.js": "/static/js/5.dda7aea6.chunk.js",
+    "static/js/6.e8c5293e.chunk.js": "/static/js/6.e8c5293e.chunk.js",
+    "static/js/7.7a9eb341.chunk.js": "/static/js/7.7a9eb341.chunk.js",
+    "static/js/8.904cd020.chunk.js": "/static/js/8.904cd020.chunk.js",
+    "static/js/9.5c7e7ca0.chunk.js": "/static/js/9.5c7e7ca0.chunk.js",
+    "static/js/10.19548827.chunk.js": "/static/js/10.19548827.chunk.js",
+    "static/js/11.5ab7336f.chunk.js": "/static/js/11.5ab7336f.chunk.js",
+    "static/js/12.b12b7f3d.chunk.js": "/static/js/12.b12b7f3d.chunk.js",
+    "static/js/13.44c8e1ff.chunk.js": "/static/js/13.44c8e1ff.chunk.js",
+    "static/js/14.5f585dc3.chunk.js": "/static/js/14.5f585dc3.chunk.js",
+    "static/js/15.6092577b.chunk.js": "/static/js/15.6092577b.chunk.js",
+    "static/js/16.c23c7418.chunk.js": "/static/js/16.c23c7418.chunk.js",
+    "static/js/17.adf30ce4.chunk.js": "/static/js/17.adf30ce4.chunk.js",
+    "static/js/18.18dd89b5.chunk.js": "/static/js/18.18dd89b5.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.f936c57fe756dfc5d1431292c3ae094b.js": "/precache-manifest.f936c57fe756dfc5d1431292c3ae094b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.eac1c8c5.chunk.js.LICENSE.txt": "/static/js/2.eac1c8c5.chunk.js.LICENSE.txt",
+    "static/js/4.28dc0ba5.chunk.js.LICENSE.txt": "/static/js/4.28dc0ba5.chunk.js.LICENSE.txt",
+    "static/js/6.e8c5293e.chunk.js.LICENSE.txt": "/static/js/6.e8c5293e.chunk.js.LICENSE.txt",
+    "static/media/coreui-icons.min.css": "/static/media/CoreUI-Icons-Linear.e1faf5f8.woff",
+    "static/media/simple-line-icons.css": "/static/media/Simple-Line-Icons.f33df365.eot",
+    "static/media/flag-icon.min.css": "/static/media/zw.8b885465.svg",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/sygnet.svg": "/static/media/sygnet.dba7f081.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32931517.js",
+    "static/css/2.06efa7ae.chunk.css",
+    "static/js/2.eac1c8c5.chunk.js",
+    "static/css/main.8b707407.chunk.css",
+    "static/js/main.3856faf2.chunk.js"
+  ]
+}
