@@ -13,10 +13,9 @@ module.exports = async (req, res, next) => {
         );
     }
     let token = auth.split(' ')[1];
-    let userInfo = sails.helpers.jwt.verify(token);
-
-    req.user = userInfo;
-    next();
+    let tokenInfo = await Customer.verifyCustomerToken(token);
+    req.customerId = tokenInfo.customerId;
+    return next();
   } catch (err) {
     return res
       .status(401)

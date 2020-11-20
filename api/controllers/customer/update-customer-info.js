@@ -18,7 +18,7 @@ module.exports = {
 
 
   fn: async function (inputs) {
-    let allowFields = ['name', 'phone', 'email', 'birth', 'gender', 'address', 'avatar', 'provinceId', 'districtId', 'wardId', 'contact']
+    let allowFields = ['name', 'phone', 'email', 'birth', 'gender', 'address', 'avatar', 'provinceId', 'districtId', 'wardId']
     let updateInfo = {};
     let customerInfo = await Customer.getCustomerInfo(this.req.customerId);
     for (var i in inputs.info) {

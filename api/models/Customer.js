@@ -28,6 +28,30 @@ module.exports = {
     password : {type  : 'number'}
 
   },
-
+  getCustomerInfo : async (id)=>{
+    let data = await Customer.findOne({id});
+    return data;
+  },
+  verifyCustomerToken: token => {
+    let tokenInfo = sails.services.crypt.verifyJwt(token);
+    if (tokenInfo.data.scope !== 'customer') throw flaverr('e_invalid_scope');
+    return tokenInfo.data;
+  },
+  updateCustomerInfo: async (customerId, info) => {
+    // let customerInfo = await Customer.getCustomerInfo(customerId);
+    // for (var i in info) {
+    //   customerInfo[i] = info[i];
+    // }
+    // sails.services.redis.set(Customer.getCustomerKey(customerId), JSON.stringify(customerInfo),
+    //   'ex', Conf.get(`CACHE_TIME_LONG`));
+    // sails.services.messagequeue.addDbItem({
+    //   action: 'update',
+    //   model: 'customer',
+    //   updateCrit: customerId,
+    //   data: info
+    // })
+    let customerInfo = await Customer.update({id : customerId}).set(info);
+    return customerInfo;
+  },
 };
 

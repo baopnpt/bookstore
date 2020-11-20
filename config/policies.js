@@ -34,5 +34,7 @@ module.exports.policies = {
   "otp/verify-otp": true,
   "product/get-list-product" : true,
   "banner/get-list-banner" : true,
-  "product/get-product-info" : true
+  "product/get-product-info" : true,
+  "customer/get-customer-info" : "bearer",
+  "customer/update-customer-info" : "bearer"
 };
