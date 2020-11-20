@@ -22,7 +22,7 @@
 module.exports = {
   serverIP: '127.0.0.1',
   serverID: 2,
-  port: 8082,
+  port: 8099,
   debug: true,
   emulator: true,
   datastores: {
