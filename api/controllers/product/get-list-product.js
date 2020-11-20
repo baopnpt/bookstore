@@ -3,16 +3,15 @@ module.exports = {
 
   description: "",
 
-  inputs: {
-    skip: { type: "number", required: true },
-    limit: { type: "number", required: true },
-  },
+  inputs: {},
 
   exits: {},
 
   fn: async function (inputs, exits) {
     try {
-      let { skip, limit } = inputs;
+      let { skip, limit } = this.req.query;
+      if(!skip) skip = 0;
+      if(!limit) limit = 10;
       let data = await Books.find({
         where: {
           isActive: 1,

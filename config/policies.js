@@ -32,5 +32,7 @@ module.exports.policies = {
   "customer/login-by-phone": true,
   "otp/send-otp": true,
   "otp/verify-otp": true,
-  "product/get-list-product" : true
+  "product/get-list-product" : true,
+  "banner/get-list-banner" : true,
+  "product/get-product-info" : true
 };

@@ -20,6 +20,10 @@ module.exports = {
     images : {type : "json", defaultsTo : []},
     isActive : {type : "number"}
   },
+  getInfoById : async (id)=>{
+    let data = await Books.findOne({id});
+    return data;
+  }
 
 };
 
