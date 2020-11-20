@@ -9,6 +9,7 @@
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
     "async-redis": "^1.1.7",
+    "aws-sdk": "^2.796.0",
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "delay": "^4.3.0",

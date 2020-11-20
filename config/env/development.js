@@ -37,7 +37,7 @@ module.exports = {
       // }
       // default: {
       adapter: 'mysql-v2',
-      url: 'mysql://root:1234@localhost:3306/bookstore',
+      url: 'mysql://megaone:UN4M7cfgcC@128.199.96.181:3306/bookstore',
     },
   },
 
