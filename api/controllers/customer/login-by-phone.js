@@ -25,9 +25,7 @@ module.exports = {
       if (!endUserInfo){
         endUserInfo = await Customer.create({
           phone,
-          exchangeId : -1
         }).fetch();
-        Customer.createExchangId(endUserInfo);
       }
         
       let accessToken = sails.services.crypt.signJwt(
@@ -37,7 +35,7 @@ module.exports = {
         },
         Conf.get("ACCESS_TOKEN_EXPIRE", 3000),
       );
-
+      
       return exits.success({
         code: 0,
         message: "Thành công",

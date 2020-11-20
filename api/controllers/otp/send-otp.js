@@ -16,10 +16,9 @@ module.exports = {
       let { phone } = inputs;
       let phoneRegex = new RegExp("[^0-9]");
       if (phoneRegex.test(phone) == true) throw flaverr("e_phone_is_fail");
-      let isInWhiteList = Conf.checkPhoneInWhiteList(inputs.phone);
       let crazyMode = Conf.get("CRAZY_MODE", false);
       let otp = "4444";
-      if (!isInWhiteList && !crazyMode) {
+      if (!crazyMode) {
         // await sails.helpers.common.checkSpeedOtp(phone);
         otp = sails.helpers.common.generateOtp();
         Sms.sendSMS({
