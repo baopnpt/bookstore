@@ -11,4 +11,19 @@ client.runMulti = (multi) => {
     });
   });
 };
+client.setExpire = async (key,data,time = 300) =>{
+  data = JSON.stringify(data);
+  return client.set(key,data,"EX",time)
+}
+client.getParse = async (key)=>{
+  let data = await client.get(key);
+  if(data){
+    return JSON.parse(data)
+  }else return undefined
+}
+
+// client.set = async (key,data)=>{
+//    data = JSON.stringify(data)
+//   return client.set(key,data)
+// }
 module.exports = client;

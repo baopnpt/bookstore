@@ -14,7 +14,7 @@ module.exports = {
   },
   getAllCategory : async ()=>{
     let key = "ALL_CATEGORY";
-    let data = await sails.services.redis.get(key);
+    let data = await sails.services.redis.getParse(key);
     if(!data){
       data = await Category.find({
         isActive : 1

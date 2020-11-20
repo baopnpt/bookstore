@@ -15,6 +15,12 @@ module.exports = {
         message : "Thành công",
         data
       })
-    } catch (error) {}
+    } catch (error) {
+      return exits.success({
+        code : 1,
+        message : "Thất bại",
+        data : []
+      })
+    }
   },
 };

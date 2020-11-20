@@ -13,7 +13,7 @@ module.exports = {
   fn: async function (inputs, exits) {
     try {
       let { skip, limit } = inputs;
-      let data = await Book.find({
+      let data = await Books.find({
         where: {
           isActive: 1,
         },
