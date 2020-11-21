@@ -18,9 +18,14 @@ module.exports = {
     numberOfPage: { type: "number" },
     images: { type: "json", defaultsTo: [] },
     isActive: { type: "number" },
-    nameAlias : {type : "string"}
+    nameAlias : {type : "string", allowNull : true}
   },
   afterCreate : (inst, cb)=>{
+    let nameAl = sails.helpers.common.removeAlias(inst.name);
+    Books.update(inst.id).set({nameAlias : nameAl}).then(()=>{});
+    cb();
+  },
+  afterUpdate : (inst, cb)=>{
     let nameAl = sails.helpers.common.removeAlias(inst.name);
     Books.update(inst.id).set({nameAlias : nameAl}).then(()=>{});
     cb();
