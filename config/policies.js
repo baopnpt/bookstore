@@ -25,7 +25,7 @@ module.exports.policies = {
   "admin/get-meta": true,
   "admin/query": "tech",
   "admin/cmd": "tech",
-  "file/upload-image": "bearer",
+  "file/upload-image":true,
   "file/upload-file": "bearer",
   "user/logout": "customer",
   "category/get-list-category": true,
@@ -36,5 +36,6 @@ module.exports.policies = {
   "banner/get-list-banner" : true,
   "product/get-product-info" : true,
   "customer/get-customer-info" : "customer",
-  "customer/update-customer-info" : "customer"
+  "customer/update-customer-info" : "customer",
+  "product/search-product" : true
 };
