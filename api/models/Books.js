@@ -15,6 +15,7 @@ module.exports = {
     categoryId : {type : "number"},
     name : {type : "string"},
     price : {type : "number"},
+    salePrice : {type : "number"},
     description : {type : "string"},
     numberOfPage : {type : "number"},
     images : {type : "json", defaultsTo : []},

@@ -13,17 +13,14 @@ module.exports = async (req, res, next) => {
         );
     }
     let token = auth.split(' ')[1];
-    let userInfo = sails.helpers.jwt.verify(token);
-    req.user = userInfo;
+    let tokenInfo = await Customer.verifyCustomerToken(token);
+    req.customerId = tokenInfo.customerId;
     return next();
   } catch (err) {
     return res
       .status(401)
       .json(
-        {
-          code: 1,
-          message: err
-        }
+        sails.helpers.common.responseError(new Error(Err.CODE.TOKEN_IS_INVALID))
       );
   }
 };

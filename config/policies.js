@@ -25,9 +25,9 @@ module.exports.policies = {
   "admin/get-meta": true,
   "admin/query": "tech",
   "admin/cmd": "tech",
-  "file/upload-image": ["bearer"],
-  "file/upload-file": ["bearer"],
-  "user/logout": "bearer",
+  "file/upload-image": ["customer"],
+  "file/upload-file": ["customer"],
+  "user/logout": "customer",
   "category/get-list-category": true,
   "customer/login-by-phone": true,
   "otp/send-otp": true,
@@ -35,6 +35,6 @@ module.exports.policies = {
   "product/get-list-product" : true,
   "banner/get-list-banner" : true,
   "product/get-product-info" : true,
-  "customer/get-customer-info" : "bearer",
-  "customer/update-customer-info" : "bearer"
+  "customer/get-customer-info" : "customer",
+  "customer/update-customer-info" : "customer"
 };
