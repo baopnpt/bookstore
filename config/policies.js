@@ -39,5 +39,7 @@ module.exports.policies = {
   "customer/update-customer-info" : "customer",
   "product/search-product" : true,
   "comment/get-list-comment" : true,
-  "comment/add-comment" : "customer"
+  "comment/add-comment" : "customer",
+  "order/create-order" : "customer",
+  "order/get-list-order" : "customer"
 };

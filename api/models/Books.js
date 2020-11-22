@@ -46,4 +46,10 @@ module.exports = {
     });
     return data
   },
+  getProductWithIds : async (productIds)=>{
+    let data = await Books.find({
+      id : productIds
+    });
+    return data;
+  }
 };
