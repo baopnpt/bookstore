@@ -41,5 +41,7 @@ module.exports.policies = {
   "comment/get-list-comment" : true,
   "comment/add-comment" : "customer",
   "order/create-order" : "customer",
-  "order/get-list-order" : "customer"
+  "order/get-list-order" : "customer",
+  "page/create-page-pro" : true,
+  "product/get-list-product-by-category" : true
 };
