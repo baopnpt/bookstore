@@ -18,7 +18,9 @@ module.exports = {
     numberOfPage: { type: "number" },
     images: { type: "json", defaultsTo: [] },
     isActive: { type: "number" },
-    nameAlias : {type : "string", allowNull : true}
+    nameAlias : {type : "string", allowNull : true},
+    total : {type : "number"},
+    purchased : {type : "number"}
   },
   afterCreate : (inst, cb)=>{
     let nameAl = sails.helpers.common.removeAlias(inst.name);
