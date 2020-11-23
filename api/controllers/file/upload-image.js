@@ -67,7 +67,7 @@ module.exports = {
       });
       linkImage = linkImage.substring(linkImage.indexOf("?"), 0);
       let fileUploadTmp = {
-        user: req.user.id,
+        user: 0,
         fileName: fname,
         serverFileDir: "",
         serverFileName: "images",
