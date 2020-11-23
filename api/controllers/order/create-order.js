@@ -19,6 +19,7 @@ module.exports = {
       type: "json",
       required: true,
     },
+    note : {type : "string"}
   },
 
   exits: {},
@@ -35,6 +36,7 @@ module.exports = {
         address,
         methodPayment,
         cart,
+        note
       } = inputs;
       let customerId = this.req.customerId;
       let productIds = cart.map((e) => e.productId);
@@ -68,7 +70,8 @@ module.exports = {
         shipMoney,
         itemCount,
         image,
-        status : "wait_for_confirmation"
+        status : "wait_for_confirmation",
+        note
       }).fetch();
       cart.map(e=>{
         let item = {
