@@ -43,5 +43,6 @@ module.exports.policies = {
   "order/create-order" : "customer",
   "order/get-list-order" : "customer",
   "page/create-page-pro" : true,
-  "product/get-list-product-by-category" : true
+  "product/get-list-product-by-category" : true,
+  "order/get-order-info" : true
 };
