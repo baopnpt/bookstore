@@ -23,6 +23,7 @@ module.exports = {
             },
             skip,
             limit,
+            sort : "createdat desc"
           });
           break;
         }
@@ -34,6 +35,7 @@ module.exports = {
             },
             skip,
             limit,
+            sort : "createdat desc"
           });
           break;
         }
