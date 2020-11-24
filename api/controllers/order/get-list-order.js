@@ -23,7 +23,7 @@ module.exports = {
             },
             skip,
             limit,
-            sort : "createdat desc"
+            sort : "createdAt desc"
           });
           break;
         }
@@ -35,7 +35,7 @@ module.exports = {
             },
             skip,
             limit,
-            sort : "createdat desc"
+            sort : "createdAt desc"
           });
           break;
         }
@@ -48,7 +48,7 @@ module.exports = {
       });
     } catch (error) {
       return exits.success({
-        code: 0,
+        code: 1,
         message: "Hệ thống bận xin vui lòng thử lại sau",
       });
     }
