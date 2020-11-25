@@ -10,7 +10,7 @@ module.exports = {
   attributes: {
 
     name : {type : "string"},
-    address : {type : "string"}
+    address : {type : "string", allowNull : true}
 
   },
 

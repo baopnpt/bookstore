@@ -22,6 +22,7 @@ module.exports = {
     fn: async function (inputs, exits) {
         let pages = await Page.find(),
             menus = await Menu.find();
+        console.log(pages[0])   
         return exits.success({ pages, menus });
     }
 };

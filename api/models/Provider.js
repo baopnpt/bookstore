@@ -8,7 +8,7 @@
 module.exports = {
   attributes: {
     name: { type: "string" },
-    address: { type: "string" },
-    phone: { type: "string" },
+    address: { type: "string", allowNull : true },
+    phone: { type: "string" , allowNull : true},
   },
 };

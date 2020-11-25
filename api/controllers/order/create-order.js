@@ -65,7 +65,7 @@ module.exports = {
         districtId,
         wardId,
         address,
-        methodPayment,
+        methodPayment : "cod",
         customerId,
         shipMoney,
         itemCount,

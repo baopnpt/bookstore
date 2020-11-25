@@ -8,8 +8,8 @@
 module.exports = {
   attributes: {
     name: { type: "string" },
-    image : {type : "string"},
-    orderIndex : {type : "string"},
+    image : {type : "string", allowNull : true},
+    orderIndex : {type : "string", allowNull : true},
     isActive : {type  :"number", defaultsTo : 0}
   },
   getAllCategory : async ()=>{
