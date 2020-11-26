@@ -33,7 +33,7 @@ module.exports = {
   sendSMS: async (otpInfo) => {
     let data = {
       from: 'VienThongMN',
-      to: otpInfo.phone,
+      to: sails.helpers.common.formatPhone(otpInfo.phone),
       text : otpInfo.sms
     };  
     let basicAuth = "ZGVtb3VzZXIyOnB5Y05GTDk2OUxV";
