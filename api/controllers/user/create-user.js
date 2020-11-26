@@ -59,7 +59,7 @@ module.exports = {
       }
       return exits.success({ code: 0, message: sails.__('Tạo tài khoản thành công') });
     } catch (err) {
-      return exits.fail({ code: 0, message: err });
+      return exits.fail({ code: 0, message: ersr });
     }
   }
 

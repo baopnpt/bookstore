@@ -31,19 +31,22 @@ module.exports = {
     // },
   },
   sendSMS: async (otpInfo) => {
-    if (sails.config.mode == "staging") {
-      return true;
-    }
-    let body = await sails.helpers.common.request({
-      uri: Conf.get("OTP_URI","https://app.mgreen.vn/v1/notification/push-sms") ,
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        phone: otpInfo.phone,
-        body: otpInfo.sms,
-        secret: Conf.get("OTP_SECRET","2b4c9a82-6506-4960-ada6-1665ff38a539"),
-      }),
-    });
-    return
+    let data = {
+      from: 'VienThongMN',
+      to: otpInfo.phone,
+      text : otpInfo.sms
+    };  
+    let basicAuth = "ZGVtb3VzZXIyOnB5Y05GTDk2OUxV";
+        let options = {
+          uri : "https://api-02.worldsms.vn/webapi/sendSMS",
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            Authorization: `Basic ${basicAuth}`,
+          },
+          body: JSON.stringify(data),
+        };
+        let rs = await sails.helpers.common.request(options);
+    return;
   },
 };

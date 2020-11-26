@@ -23,7 +23,7 @@ module.exports = {
         otp = sails.helpers.common.generateOtp();
         Sms.sendSMS({
           phone,
-          sms: `Ma OTP la ${otp}. Ma OTP chi su dung cho 1 lan dang nhap ung dung mPoint`,
+          sms: `Ma OTP la ${otp}. Ma OTP chi su dung cho 1 lan dang nhap ung dung Bestbook`,
         }).then((rs) => {});
       }
       let token = await sails.helpers.otp.createOtp.with({

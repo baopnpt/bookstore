@@ -13,7 +13,7 @@ module.exports = {
     isActive: { type: 'boolean', required: true },
     action: { type: 'string', isIn: ['productInfo', 'openUrl'] },
     actionData: { type: 'string' },
-    sequence: { type: 'number' },
+    sequence: { type: 'number'   },
   },
   getAllBanners : async ()=>{
     let key = "ALL_BANNER";

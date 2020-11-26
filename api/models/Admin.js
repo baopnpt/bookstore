@@ -20,6 +20,7 @@ module.exports = {
     username: { type: 'string', maxLength: 255 },
     password: { type: 'string', maxLength: 255 },
     avatar: { type: 'string', maxLength: 255 },
+    
   },
   createUserAccount: async input => {
 
